@@ -10,31 +10,31 @@
         <Grid.Background>
             <ImageBrush ImageSource="/th.jpg" />
         </Grid.Background>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10, 10, 20, 200">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="200,112,0,0">
             <ComboBox x:Name="Kleurcode1" Width="150" />
             <ComboBox x:Name="Kleurcode2" Width="150" />
             <ComboBox x:Name="Kleurcode3" Width="150" />
             <ComboBox x:Name="Kleurcode4" Width="150" />
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="198,0,0,0" >
             <Label x:Name="Kleur1" Width="150" Height="100" BorderThickness="2" BorderBrush="Gray" Background="#FFFAFAFA" />
             <Label x:Name="Kleur2" Width="150" Height="100" BorderThickness="2" BorderBrush="Gray" Background="White" />
             <Label x:Name="Kleur3" Width="150" Height="100" BorderThickness="2" BorderBrush="Gray" Background="White" />
             <Label x:Name="Kleur4" Width="150" Height="100" BorderThickness="2" BorderBrush="Gray" Background="White" />
         </StackPanel>
 
-        <Button Content="Check code" HorizontalAlignment="Center" VerticalAlignment="Top" Width="500" Height="100" FontSize="24" FontFamily="Power Green" Click="Button_Click"/>
-        <Label FontSize="15" Content="Total atempts&#xD;&#xA;" Margin="10,0,683,402" Background="White"/>
-        <TextBox x:Name="Total_attemps"  HorizontalAlignment="Left" Height="32" Margin="46,32,0,0" TextWrapping="Wrap" Text="0" FontSize="20" VerticalAlignment="Top" Width="36"/>
+        <Button Content="Check code" HorizontalAlignment="Left" VerticalAlignment="Top" Width="311" Height="100" FontSize="24" FontFamily="Power Green" Click="Button_Click" Margin="345,-2,0,0"/>
+        <Label FontSize="15" Content="Totale poggingen&#xA;" Margin="200,0,460,402" Background="White"/>
+        <TextBox x:Name="Total_attemps"  HorizontalAlignment="Left" Height="32" Margin="252,38,0,0" TextWrapping="Wrap" Text="0" FontSize="20" VerticalAlignment="Top" Width="36"/>
         <TextBox x:Name="Debug" HorizontalAlignment="Left" Height="206" Margin="540,0,0,0" TextWrapping="Wrap" Text="Debug" VerticalAlignment="Top" Width="250" Visibility="Hidden"/>
         <TextBox x:Name="Countdown" HorizontalAlignment="Left" Margin="705,32,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="36" Height="38" FontSize="24"/>
         <Label Content="Time remaining" HorizontalAlignment="Left" Height="31" Margin="661,1,0,0" VerticalAlignment="Top" Width="124" FontSize="16" Background="White"/>
-        <StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="-5,284,5,0" Height="97">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" Margin="95,289,-95,0" Height="97">
             <Label Content="poging history:" FontWeight="Medium" Background="White" Width="98" />
             <ListBox x:Name="HistoryListBox" Height="70" Width="600" />
         </StackPanel>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="705,0,0,293">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="20,0,0,146">
             <Label Content="Score:" FontWeight="Bold" Background="White" RenderTransformOrigin="0.5,0.5" Width="53" >
                 <Label.RenderTransform>
                     <TransformGroup>
@@ -47,9 +47,9 @@
             </Label>
             <Label x:Name="ScoreLabel" Content="0" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center" Background="White" />
         </StackPanel>
-        <Menu x:Name="Menu_master" Margin="296,83,306,83">
+        <Menu x:Name="Menu_master" Margin="0,0,605,177">
             <Label Height="36" Width="95" Margin="45,10,10,10" Content="Mastermind&#xD;&#xA;" FontFamily="Power Green" FontSize="20"/>
-            <Button Content="nieuw spel" Margin="65, 0, 10, 10"/>
+            <Button Content="nieuw spel" Margin="65, 0, 10, 10" Click="Button_Click_1"/>
             <Button Content="Highscores" Margin="65, 0, 10, 10"/>
             <Button Content="Afsluiten" Margin="70, 0, 10, 10"/>
             <Button Content="Instellingen" Margin="65, 0, 10, 10"/>
