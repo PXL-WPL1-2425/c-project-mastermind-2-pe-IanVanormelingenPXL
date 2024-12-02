@@ -101,7 +101,7 @@ namespace PE_2_Mastermind
 
         private void ResetGame()
         {
-            totalAttempts = 0;
+            totalAttempts = 10;
             GenerateGeheime_code();
             FillComboBoxes();
             remainingTime = 10;
@@ -259,6 +259,13 @@ namespace PE_2_Mastermind
             {
                 e.Cancel = true; // Cancel the closing event, keeping the window open
             }
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            if (codeCracked)
+                MessageBox.Show(Name, totalAttempts, ScoreLabel.Content);
+                //[naam speler] - [x pogingen] - [score / 100];
         }
     }
     
