@@ -249,6 +249,17 @@ namespace PE_2_Mastermind
         {
             MessageBox.Show("please give us your name: {TextBlock textBlock}", MessageBoxButton.OK, MessageBoxImage.Question);
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("Weet je zeker dat je de applicatie wilt afsluiten?",
+                                         "Bevestigen", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.No)
+            {
+                e.Cancel = true; // Cancel the closing event, keeping the window open
+            }
+        }
     }
     
     
