@@ -242,7 +242,7 @@ namespace PE_2_Mastermind
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            totalAttempts = Content.ToString();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
